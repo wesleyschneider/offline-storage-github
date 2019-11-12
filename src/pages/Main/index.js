@@ -42,6 +42,8 @@ export default function Main() {
     realm.write(() => {
       realm.create('Repository', data, 'modified');
     });
+
+    return data;
   }
 
   async function handleSubmit() {
@@ -59,6 +61,20 @@ export default function Main() {
     } catch (err) {
       setError(true);
       setLoading(false);
+      console.tron.log(err);
+    }
+  }
+
+  async function handleRefreshRepository(repository) {
+    try {
+      const response = await api.get(`/repos/${repository.fullName}`);
+
+      const data = await saveRepository(response.data);
+
+      setRepositories(
+        repositories.map(repo => (repo.id === data.id ? data : repo)),
+      );
+    } catch (err) {
       console.tron.log(err);
     }
   }
@@ -87,7 +103,12 @@ export default function Main() {
         keyboardShouldPersistTaps="handled"
         data={repositories}
         keyExtractor={item => String(item.id)}
-        renderItem={({item}) => <Repository data={item} />}
+        renderItem={({item}) => (
+          <Repository
+            data={item}
+            onRefresh={() => handleRefreshRepository(item)}
+          />
+        )}
       />
     </Container>
   );
