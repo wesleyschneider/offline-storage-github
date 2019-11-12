@@ -5,7 +5,6 @@ export const Container = styled.View`
   margin-bottom: 15px;
   background-color: #fff;
   border-radius: 4px;
-  flex: 1;
 `;
 
 export const Name = styled.Text`
