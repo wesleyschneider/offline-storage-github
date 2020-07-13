@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {Keyboard, ActivityIndicator} from 'react-native';
+import {Keyboard, ActivityIndicator, Alert} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import api from '~/services/api';
@@ -40,7 +40,7 @@ export default function Main() {
     const realm = await getRealm();
 
     realm.write(() => {
-      realm.create('Repository', data, 'modified');
+      realm.create('Repository', data, true);
     });
 
     return data;
@@ -61,7 +61,6 @@ export default function Main() {
     } catch (err) {
       setError(true);
       setLoading(false);
-      console.tron.log(err);
     }
   }
 
@@ -75,7 +74,7 @@ export default function Main() {
         repositories.map(repo => (repo.id === data.id ? data : repo)),
       );
     } catch (err) {
-      console.tron.log(err);
+      Alert.alert('Oops', err.message);
     }
   }
 
@@ -88,21 +87,23 @@ export default function Main() {
           autoCapitalize="none"
           autoCorrect={false}
           placeholder="Procurar repositório"
+          value={input}
+          onSubmitEditing={handleSubmit}
           error={error}
           editable={!loading}
         />
         <Submit onPress={handleSubmit}>
           {loading ? (
-            <ActivityIndicator color="#fff" size="small" />
+            <ActivityIndicator color="#212121" size="small" />
           ) : (
-            <Icon name="add" size={22} color="#fff" />
+            <Icon name="add" size={22} color="#212121" />
           )}
         </Submit>
       </Form>
       <List
         keyboardShouldPersistTaps="handled"
         data={repositories}
-        keyExtractor={item => String(item.id)}
+        keyExtractor={(_, index) => String(index)}
         renderItem={({item}) => (
           <Repository
             data={item}

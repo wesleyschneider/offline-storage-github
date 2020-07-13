@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "OfflineStorageGithub.app"
-               BlueprintName = "OfflineStorageGithub"
-               ReferencedContainer = "container:OfflineStorageGithub.xcodeproj">
+               BuildableName = "RepoList.app"
+               BlueprintName = "RepoList"
+               ReferencedContainer = "container:RepoList.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "OfflineStorageGithubTests.xctest"
-               BlueprintName = "OfflineStorageGithubTests"
-               ReferencedContainer = "container:OfflineStorageGithub.xcodeproj">
+               BuildableName = "RepoListTests.xctest"
+               BlueprintName = "RepoListTests"
+               ReferencedContainer = "container:RepoList.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -61,9 +61,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "OfflineStorageGithubTests.xctest"
-               BlueprintName = "OfflineStorageGithubTests"
-               ReferencedContainer = "container:OfflineStorageGithub.xcodeproj">
+               BuildableName = "RepoListTests.xctest"
+               BlueprintName = "RepoListTests"
+               ReferencedContainer = "container:RepoList.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -71,9 +71,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "OfflineStorageGithub.app"
-            BlueprintName = "OfflineStorageGithub"
-            ReferencedContainer = "container:OfflineStorageGithub.xcodeproj">
+            BuildableName = "RepoList.app"
+            BlueprintName = "RepoList"
+            ReferencedContainer = "container:RepoList.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "OfflineStorageGithub.app"
-            BlueprintName = "OfflineStorageGithub"
-            ReferencedContainer = "container:OfflineStorageGithub.xcodeproj">
+            BuildableName = "RepoList.app"
+            BlueprintName = "RepoList"
+            ReferencedContainer = "container:RepoList.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -113,9 +113,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "OfflineStorageGithub.app"
-            BlueprintName = "OfflineStorageGithub"
-            ReferencedContainer = "container:OfflineStorageGithub.xcodeproj">
+            BuildableName = "RepoList.app"
+            BlueprintName = "RepoList"
+            ReferencedContainer = "container:RepoList.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
