@@ -27,7 +27,7 @@
 </p>
 
 <p align="center">
-  <img alt="App screenshot" src="https://raw.githubusercontent.com/wesleyschneider/repo-list/master/assets/app.png" />
+  <img alt="App screenshot" width="300" src="https://raw.githubusercontent.com/wesleyschneider/repo-list/master/assets/app.png" />
 </p>
 
 ## :rocket: Technologies
