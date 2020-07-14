@@ -11,7 +11,9 @@
 
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/wesleyschneider/repo-list.svg">
 
-  <a href="https://www.codacy.com/manual/wesleyschneider/repo-list?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=wesleyschneider/repo-list&amp;utm_campaign=Badge_Grade"><img src="https://app.codacy.com/project/badge/Grade/c7560f1a358e42c6a32315fc582ecc60"/></a>
+  <a href="https://www.codacy.com/manual/wesleyschneider/repo-list?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=wesleyschneider/repo-list&amp;utm_campaign=Badge_Grade">
+  <img src="https://app.codacy.com/project/badge/Grade/c7560f1a358e42c6a32315fc582ecc60"/>
+</a>
 
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/wesleyschneider/repo-list.svg">
   
